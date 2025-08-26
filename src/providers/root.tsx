@@ -4,6 +4,7 @@ import { AppSidebar } from "@/components/sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { ThemeProvider } from "./theme";
 import { Toaster } from "react-hot-toast";
+import { ToggleTheme } from "@/components/toggle-theme";
 
 function RootProvider({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +17,9 @@ function RootProvider({ children }: { children: React.ReactNode }) {
       <SidebarProvider>
         <AppSidebar />
         <main className="w-full px-3 py-2">
-          <header className="fixed z-10">
+          <header className="flex items-center justify-between w-full">
             <SidebarTrigger />
+            <ToggleTheme />
           </header>
           {children}
         </main>

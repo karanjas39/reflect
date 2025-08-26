@@ -4,7 +4,7 @@ import NewChatForm from "@/components/new-chat";
 
 function HomePage() {
   return (
-    <section className="space-y-4 mt-10">
+    <section className="space-y-4">
       <div className="space-y-2 text-center">
         <h1 className={cn("text-3xl text-primary", logoFont.className)}>
           Reflect.

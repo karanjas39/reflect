@@ -17,7 +17,7 @@ async function ChatDetail({ params }: { params: Promise<{ chatid: string }> }) {
   if (!chatid) redirect("/");
 
   return (
-    <section className="space-y-4 mt-10">
+    <section className="space-y-4">
       <div className="space-y-2 text-center">
         <h1 className={cn("text-3xl text-primary", logoFont.className)}>
           Reflect.
