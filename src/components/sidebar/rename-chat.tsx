@@ -60,6 +60,7 @@ function RenameChat({ chatId, chatName }: RenameChatProps) {
               onChange={(e) => setNewName(e.target.value)}
               placeholder="Enter chat name"
               autoFocus
+              maxLength={50}
             />
           </div>
           <DialogFooter className="w-full gap-2">
